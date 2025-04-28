@@ -6,7 +6,7 @@
 
 <br>
 
-# FIAP Fase6_Enterprise_Challenge_Sprint2
+# FIAP Fase6_Cap 1 - Despertar da rede neural
 
 
 ## 👨‍🎓 Integrantes: 
