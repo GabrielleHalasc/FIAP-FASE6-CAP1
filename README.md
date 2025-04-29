@@ -170,7 +170,7 @@ https://colab.research.google.com/drive/11KJO-xJNTmtUHW_XQa9RU60F-sF1m9kL#scroll
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- fase6.py.py: Código Python contendo o primeiro entregavel do projeto.
+- fase6.py: Código Python contendo o primeiro entregavel do projeto.
 
 - entregavel2.py: Código Python contendo o segundo entregavel do projeto.
 
