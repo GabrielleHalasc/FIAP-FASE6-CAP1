@@ -20,6 +20,8 @@
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi</a>
 
+# Entregavel 1:
+
 ## 📜 Descrição
 
 Projeto: Despertar da rede neural, Visao Computacional
@@ -94,12 +96,75 @@ O desempenho com tratores foi melhor tanto em precisão quanto em recall, provav
 ![image](https://github.com/user-attachments/assets/b6fda0f6-67dd-45ee-8025-db4a7c5a8c14)
 
 
-
-
 ## 📊 Link video
 
 https://youtu.be/i6o_5E1ckbo
 
+# 📑 Entrega 2 - Comparativo de Modelos de Visão Computacional
+
+## Objetivo
+
+O objetivo desta entrega foi comparar a performance de três abordagens de redes neurais em Visão Computacional aplicadas a um problema de detecção de objetos e classificação de imagens:
+
+- **YOLO Adaptável** (treinado na Entrega 1)
+- **YOLO Tradicional** (modelo pré-treinado)
+- **CNN Treinada do Zero**
+
+## 1. YOLO Adaptável - Resultados da Entrega 1
+
+### ⚡ Resultados
+
+- **Precisão**: 0.88 (40 epochs) / 0.91 (60 epochs)
+- **Tempo de treinamento**: 30 minutos (40 epochs) / 45 minutos (60 epochs)
+- **Tempo de inferência**: ~0.05s por imagem
+
+## 2. YOLO Tradicional (Modelo Pré-treinado)
+
+### ⚡ Resultados
+
+- **Precisão**: Baixa (não detectou objetos da base)
+- **Tempo de inferência**: ~0.45s por imagem
+
+O modelo YOLOv5s pré-treinado foi carregado diretamente do repositório e utilizado sem adaptações, mas teve problemas de detecção de objetos da nossa base de dados específica.
+
+## 3. CNN Treinada do Zero (Classificação)
+
+### ⚡ Resultados
+
+- **Precisão**: 1.00
+- **Tempo de treinamento**: Muito rápido (~20 segundos para 10 epochs)
+- **Tempo de inferência**: ~0.26s por imagem
+
+A CNN treinada do zero obteve uma precisão perfeita (1.00), mas isso se deve ao fato de o dataset ser simples e pequeno, o que pode ter causado overfitting.
+
+## 📝 Comparativo dos Modelos
+
+| Critério                      | YOLO Adaptável (Entrega 1) | YOLO Tradicional (pré-treinado) | CNN do Zero |
+|:-------------------------------|:---------------------------|:-------------------------------|:------------|
+| **Facilidade de uso/integração**   | Média (requer adaptação e treinamento) | Alta (modelo pré-treinado, fácil de usar) | Média (requer preparação de dataset e treinamento do zero) |
+| **Precisão**                       | 0.88 (40 epochs) / 0.91 (60 epochs) | Baixa (não detectou objetos da base) | 1.00 |
+| **Tempo de treinamento**           | 30 min (40 epochs) / 45 min (60 epochs) | Nenhum (pré-treinado) | Muito rápido (cerca de 20 segundos para 10 epochs) |
+| **Tempo de inferência**            | ~0.05s por imagem | ~0.45s por imagem | ~0.26s por imagem |
+
+##  🧠 Discussão Crítica
+
+- **YOLO Adaptável**:  
+  Treinar a YOLO personalizada foi um pouco mais trabalhoso, pois exigiu preparar a base de dados, treinar o modelo e ajustar hiperparâmetros. Contudo, obteve uma boa precisão de **88%** (40 epochs) e até **91%** (60 epochs). O tempo de inferência foi excelente (~0.05s/imagem), o que torna a YOLO adaptável uma boa opção para aplicações em tempo real, desde que se aceite o custo de treinamento.
+
+- **YOLO Tradicional (pré-treinado)**:  
+  Apesar da facilidade de uso, o modelo YOLOv5s pré-treinado não foi capaz de detectar corretamente os objetos da base, evidenciando a limitação de modelos genéricos quando aplicados a problemas muito específicos. O tempo de inferência foi mais alto (~0.45s/imagem), especialmente por ser executado na CPU.
+
+- **CNN Treinada do Zero**:  
+  A CNN simples foi muito rápida para treinar e atingiu **100% de acurácia** no treino e teste. Esse resultado é esperado devido ao pequeno tamanho do dataset, o que facilitou o overfitting. Para problemas de classificação de imagens em poucas classes, a CNN é eficiente e rápida, mas em detecção de objetos em maior escala, precisaria de adaptações.
+
+---
+
+** ✅ Conclusão**:  
+As três abordagens têm suas vantagens e limitações. Para uma aplicação mais genérica, a **YOLO Tradicional** pode ser útil, mas precisa ser adaptada para novos datasets. A **YOLO Adaptável** é excelente para um desempenho em tempo real, enquanto a **CNN** treinada do zero tem um ótimo desempenho em tarefas simples de classificação, mas sofre com limitações para detecção de objetos complexos.
+
+---
+## 📊 Link Colab
+https://colab.research.google.com/drive/11KJO-xJNTmtUHW_XQa9RU60F-sF1m9kL#scrollTo=DQd-wYCEz45M
 
 ## Historico de lançamentos
 
