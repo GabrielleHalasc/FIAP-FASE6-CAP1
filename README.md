@@ -166,10 +166,37 @@ As três abordagens têm suas vantagens e limitações. Para uma aplicação mai
 ## 📊 Link Colab
 https://colab.research.google.com/drive/11KJO-xJNTmtUHW_XQa9RU60F-sF1m9kL#scrollTo=DQd-wYCEz45M
 
+## 📁 Estrutura de pastas
+
+Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+
+- fase6.py.py: Código Python contendo o primeiro entregavel do projeto.
+
+- entregavel2.py: Código Python contendo o segundo entregavel do projeto.
+
+- LEIA-ME.md: Documento que funciona como um guia geral do projeto, apresentando seus objetivos, estrutura, funcionamento e instruções de uso. Este é o arquivo de leitura inicial para novos usuários.
+
+
+## 🔧 Como executar o código
+
+1. Clonar o repositório
+
+Primeiro, faça o clone deste repositório localmente usando o Git:
+
+git clone https://github.com/GabrielleHalasc/FIAP-FASE6-CAP1.git
+
+2. Instalar dependências
+
+Certifique-se de ter todas as dependências instaladas. Se estiver usando Python, você pode instalar os pacotes necessários com:
+
+pip install -r requirements.txt
+
+3. Executar o código
+   
 ## Historico de lançamentos
 
 - <b> 0.1.0 - 28/04/2025<b>
-
+- <b> 0.2.0 - 29/04/2025<b>
   
 ## 📋 Licença
 
